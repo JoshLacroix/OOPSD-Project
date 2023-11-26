@@ -1,4 +1,4 @@
 package com.example.finalproject;
 
-public class Client {
+public class Client implements Person{
 }

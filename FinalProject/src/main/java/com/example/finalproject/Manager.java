@@ -1,4 +1,4 @@
 package com.example.finalproject;
 
-public class Manager {
+public class Manager implements Person{
 }
