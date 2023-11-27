@@ -12,11 +12,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ManagerDashBoardController {
+public class ClientDashBoardController {
+    @FXML
     public Button logOutButton;
     @FXML
-    protected void movieEditButtonClick(ActionEvent pEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Manager-Movie.fxml"));
+    protected void movieViewButtonClick(ActionEvent pEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Client-Movie.fxml"));
         Parent view = fxmlLoader.load();
         Scene nextScene = new Scene(view, 600, 400);
         Stage nextStage = new Stage();
@@ -27,20 +28,8 @@ public class ManagerDashBoardController {
         nextStage.showAndWait();
     }
     @FXML
-    protected void screenRoomEditButtonClick(ActionEvent pEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Manager-Screenroom.fxml"));
-        Parent view = fxmlLoader.load();
-        Scene nextScene = new Scene(view, 600, 400);
-        Stage nextStage = new Stage();
-        nextStage.setScene(nextScene);
-        nextStage.setTitle("ZMS");
-        nextStage.initModality(Modality.WINDOW_MODAL);
-        nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
-        nextStage.showAndWait();
-    }
-    @FXML
-    protected void showTimeEditButtonClick(ActionEvent pEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Manager-Showtime.fxml"));
+    protected void clientInfoButtonClick(ActionEvent pEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Client-Info.fxml"));
         Parent view = fxmlLoader.load();
         Scene nextScene = new Scene(view, 600, 400);
         Stage nextStage = new Stage();
