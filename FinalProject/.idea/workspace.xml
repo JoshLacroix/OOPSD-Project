@@ -6,8 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="80a4c670-3d24-4b79-8385-d864aab0d9c2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ClientDashBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ClientDashBoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/LoginMainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/LoginMainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerDashBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerDashBoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/finalproject/Client-Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/finalproject/Client-Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/finalproject/Login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/finalproject/Login-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/finalproject/Manager-Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/finalproject/Manager-Dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -51,7 +57,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/adm1/OneDrive - Champlain Regional College/Documents/CST Sem 3/OOP2/Project/OOPSD-Project/FinalProject",
+    "last_opened_file_path": "C:/Users/adm1/OneDrive - Champlain Regional College/Documents/CST Sem 3/OOP2/Assignment 4/OOP2-Assignment-4",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,6 +66,21 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="LoginMainApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.finalproject.LoginMainApplication" />
+      <module name="FinalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.finalproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,11 +91,23 @@
       <updated>1700875519946</updated>
       <workItem from="1700875521074" duration="3751000" />
       <workItem from="1700940231145" duration="1604000" />
-      <workItem from="1701038885958" duration="7263000" />
+      <workItem from="1701038885958" duration="7608000" />
+      <workItem from="1701092290442" duration="5106000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

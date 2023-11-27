@@ -21,7 +21,7 @@ public class ManagerDashBoardController {
         Scene nextScene = new Scene(view, 600, 400);
         Stage nextStage = new Stage();
         nextStage.setScene(nextScene);
-        nextStage.setTitle("ZMS");
+        nextStage.setTitle("Manager");
         nextStage.initModality(Modality.WINDOW_MODAL);
         nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
         nextStage.showAndWait();
@@ -33,7 +33,7 @@ public class ManagerDashBoardController {
         Scene nextScene = new Scene(view, 600, 400);
         Stage nextStage = new Stage();
         nextStage.setScene(nextScene);
-        nextStage.setTitle("ZMS");
+        nextStage.setTitle("Manager");
         nextStage.initModality(Modality.WINDOW_MODAL);
         nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
         nextStage.showAndWait();
@@ -45,7 +45,7 @@ public class ManagerDashBoardController {
         Scene nextScene = new Scene(view, 600, 400);
         Stage nextStage = new Stage();
         nextStage.setScene(nextScene);
-        nextStage.setTitle("ZMS");
+        nextStage.setTitle("Manager");
         nextStage.initModality(Modality.WINDOW_MODAL);
         nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
         nextStage.showAndWait();
