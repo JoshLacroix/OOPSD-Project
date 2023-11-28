@@ -6,16 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="80a4c670-3d24-4b79-8385-d864aab0d9c2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ClientDashBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ClientDashBoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/LoginMainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/LoginMainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/LoginMainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/LoginMainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerDashBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerDashBoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/MovieList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/MovieList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/PersonList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/PersonList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ScreeningRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ScreeningRoom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ScreeningRoomList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ScreeningRoomList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ShowTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ShowTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ShowTimeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ShowTimeList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/TicketList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/TicketList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +96,7 @@
       <workItem from="1700875521074" duration="3751000" />
       <workItem from="1700940231145" duration="1604000" />
       <workItem from="1701038885958" duration="7608000" />
-      <workItem from="1701092290442" duration="10514000" />
+      <workItem from="1701092290442" duration="13727000" />
     </task>
     <servers />
   </component>

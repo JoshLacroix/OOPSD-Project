@@ -7,7 +7,15 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Starts the application
+ */
 public class LoginMainApplication extends Application {
+    /**
+     * Displays the first page of application
+     * @param stage
+     * @throws IOException
+     */
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Login-view.fxml"));

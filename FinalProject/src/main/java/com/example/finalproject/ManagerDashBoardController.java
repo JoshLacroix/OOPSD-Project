@@ -12,8 +12,21 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Controller for manager page once signed in
+ */
 public class ManagerDashBoardController {
+    /**
+     * button for logging out
+     */
     public Button logOutButton;
+
+    /**
+     * Displays the movies that may be edited from the manager
+     * to change movie information
+     * @param pEvent
+     * @throws IOException
+     */
     @FXML
     protected void movieEditButtonClick(ActionEvent pEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Manager-Movie.fxml"));
@@ -26,6 +39,13 @@ public class ManagerDashBoardController {
         nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
         nextStage.showAndWait();
     }
+
+    /**
+     * Displays the screening rooms that can be edited by the manager
+     * to change screening room information
+     * @param pEvent
+     * @throws IOException
+     */
     @FXML
     protected void screenRoomEditButtonClick(ActionEvent pEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Manager-Screenroom.fxml"));
@@ -38,6 +58,13 @@ public class ManagerDashBoardController {
         nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
         nextStage.showAndWait();
     }
+
+    /**
+     * Displays the show times that can be edited by the manager
+     * to change show time information
+     * @param pEvent
+     * @throws IOException
+     */
     @FXML
     protected void showTimeEditButtonClick(ActionEvent pEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Manager-Showtime.fxml"));
@@ -50,6 +77,10 @@ public class ManagerDashBoardController {
         nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
         nextStage.showAndWait();
     }
+
+    /**
+     * Button event that logs the manager out of the account
+     */
     @FXML
     protected void backButtonClick(){
         Stage currentStage = (Stage) logOutButton.getScene().getWindow();

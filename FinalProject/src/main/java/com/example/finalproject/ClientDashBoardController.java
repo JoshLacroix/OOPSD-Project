@@ -12,9 +12,21 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Controller for clients page once signed in or signed up
+ */
 public class ClientDashBoardController {
+    /**
+     * button to log out
+     */
     @FXML
     public Button logOutButton;
+
+    /**
+     * Screen thats displays what movies are being shown in the theatre once the button is pressed
+     * @param pEvent
+     * @throws IOException
+     */
     @FXML
     protected void movieViewButtonClick(ActionEvent pEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Client-Movie.fxml"));
@@ -27,6 +39,12 @@ public class ClientDashBoardController {
         nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
         nextStage.showAndWait();
     }
+
+    /**
+     * Screen that displays the clients information once the button is clicked
+     * @param pEvent
+     * @throws IOException
+     */
     @FXML
     protected void clientInfoButtonClick(ActionEvent pEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Client-Info.fxml"));
@@ -39,6 +57,10 @@ public class ClientDashBoardController {
         nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
         nextStage.showAndWait();
     }
+
+    /**
+     * A log out button event the returns client to login page
+     */
     @FXML
     protected void backButtonClick(){
         Stage currentStage = (Stage) logOutButton.getScene().getWindow();
