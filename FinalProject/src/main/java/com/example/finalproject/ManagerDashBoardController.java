@@ -78,6 +78,31 @@ public class ManagerDashBoardController {
         nextStage.showAndWait();
     }
 
+    @FXML
+    protected void clientViewButtonClick(ActionEvent pEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Manager-ClientView.fxml"));
+        Parent view = fxmlLoader.load();
+        Scene nextScene = new Scene(view, 600, 400);
+        Stage nextStage = new Stage();
+        nextStage.setScene(nextScene);
+        nextStage.setTitle("Manager");
+        nextStage.initModality(Modality.WINDOW_MODAL);
+        nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
+        nextStage.showAndWait();
+    }
+    @FXML
+    protected void ticketViewButtonClick(ActionEvent pEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Manager-Tickets.fxml"));
+        Parent view = fxmlLoader.load();
+        Scene nextScene = new Scene(view, 600, 400);
+        Stage nextStage = new Stage();
+        nextStage.setScene(nextScene);
+        nextStage.setTitle("Manager");
+        nextStage.initModality(Modality.WINDOW_MODAL);
+        nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
+        nextStage.showAndWait();
+    }
+
     /**
      * Button event that logs the manager out of the account
      */

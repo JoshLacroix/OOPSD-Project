@@ -12,10 +12,11 @@ public class MovieList {
      */
     private List<Movie> movies = new LinkedList<Movie>();
 
+    private static MovieList instance;
     /**
      * Constructs a new list with default samples
      */
-    public MovieList(){
+    private MovieList(){
         this.movies.add(new Movie("Dry Paint", "Comedy"));
         this.movies.add(new Movie("Fast and Furious 55", "Action"));
         this.movies.add(new Movie("Cabin in the Woods 2", "Horror"));
@@ -28,5 +29,12 @@ public class MovieList {
      */
     public boolean addMovie(Movie pMovie) {
         return this.movies.add(pMovie);
+    }
+
+    public static MovieList getInstance(){
+        if (instance == null) {
+            instance = new MovieList();
+        }
+        return instance;
     }
 }
