@@ -3,6 +3,7 @@ package com.example.finalproject;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -40,5 +41,11 @@ public class ManagerMovieController {
         int selectedId = this.aListView.getSelectionModel().getSelectedIndex();
         this.movieList.deleteMovieAt(selectedId);
         this.updateList();
+    }
+
+    @FXML
+    protected void backButtonClick(ActionEvent pEvent) {
+        Stage currentStage = (Stage) this.aListView.getScene().getWindow();
+        currentStage.close();
     }
 }

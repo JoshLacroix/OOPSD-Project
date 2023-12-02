@@ -16,6 +16,6 @@
       <Button fx:id="addButton" layoutX="200.0" layoutY="318.0" mnemonicParsing="false" onAction="#addButtonClick" text="Add" />
       <Button fx:id="editButton" layoutX="282.0" layoutY="318.0" mnemonicParsing="false" onAction="#editButtonClick" text="Edit" />
       <Button fx:id="deleteButton" layoutX="349.0" layoutY="318.0" mnemonicParsing="false" onAction="#deleteButtonClick" text="Delete" />
-      <Button fx:id="backButton" layoutX="496.0" layoutY="343.0" mnemonicParsing="false" text="Back" />
+      <Button fx:id="backButton" layoutX="496.0" layoutY="343.0" mnemonicParsing="false" onAction="#backButtonClick" text="Back" />
    </children>
 </Pane>
