@@ -45,4 +45,10 @@ public class MovieList {
         }
         return result;
     }
+
+    public void deleteMovieAt(int selectedId) {
+        if (this.movies.get(selectedId) != null) {
+            this.movies.remove(selectedId);
+        }
+    }
 }

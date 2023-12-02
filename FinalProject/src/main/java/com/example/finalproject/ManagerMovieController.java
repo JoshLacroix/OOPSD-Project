@@ -37,6 +37,8 @@ public class ManagerMovieController {
 
     @FXML
     protected void deleteButtonClick(ActionEvent pEvent) throws IOException {
-        // TODO delete selected movie
+        int selectedId = this.aListView.getSelectionModel().getSelectedIndex();
+        this.movieList.deleteMovieAt(selectedId);
+        this.updateList();
     }
 }
