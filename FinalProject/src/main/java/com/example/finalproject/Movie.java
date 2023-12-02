@@ -55,6 +55,9 @@ public class Movie {
         this.genre = genre;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String toString() {
         return this.getMovieName() + " (" + this.getGenre() + ")";

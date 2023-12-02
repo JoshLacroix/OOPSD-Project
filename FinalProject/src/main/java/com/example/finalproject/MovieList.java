@@ -37,6 +37,10 @@ public class MovieList {
         return instance;
     }
 
+    /**
+     * Returns a list of all movie names.
+     * @return List of movie name strings.
+     */
     public List<String> getAllMovieTitles() {
         LinkedList<String> result = new LinkedList<>();
         for (Movie movie : aMovies) {
@@ -45,12 +49,21 @@ public class MovieList {
         return result;
     }
 
+    /**
+     * Deletes movie from list.
+     * @param selectedId Movie list id to delete.
+     */
     public void deleteMovieAt(int selectedId) {
         if (this.aMovies.get(selectedId) != null) {
             this.aMovies.remove(selectedId);
         }
     }
 
+    /**
+     * Gets specific movie with selected ID.
+     * @param selectedId Movie ID to be returned.
+     * @return Selected Movie.
+     */
     public Movie getMovieAt(int selectedId) {
         if (selectedId < 0 || selectedId >= this.aMovies.size()) {
             throw new IndexOutOfBoundsException("This movie cannot be selected!");
