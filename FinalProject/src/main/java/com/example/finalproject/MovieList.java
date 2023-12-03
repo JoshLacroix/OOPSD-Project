@@ -37,4 +37,12 @@ public class MovieList {
         }
         return instance;
     }
+
+    public List<String> getAllMovieTitles() {
+        LinkedList<String> result = new LinkedList<>();
+        for (Movie movie : movies) {
+            result.add(movie.toString());
+        }
+        return result;
+    }
 }
