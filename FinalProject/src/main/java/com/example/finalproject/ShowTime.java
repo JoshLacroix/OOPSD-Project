@@ -84,4 +84,12 @@ public class ShowTime {
     public void setScreeningRoom(int screeningRoom) {
         this.screeningRoom = screeningRoom;
     }
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String toString() {
+        return this.getMovie() + " shown in room " + this.getScreeningRoom() + " at " + showDate +
+                " " + getNumOfTickets() + " tickets remain";
+    }
 }
