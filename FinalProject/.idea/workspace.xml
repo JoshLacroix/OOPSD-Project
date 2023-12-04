@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80a4c670-3d24-4b79-8385-d864aab0d9c2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/LoginMainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/LoginMainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerScreenRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerScreenRoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/PersonList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/PersonList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ScreeningRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ScreeningRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ScreeningRoomList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ScreeningRoomList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerShowTimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerShowTimeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerShowTimeEditViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerShowTimeEditViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ShowTimeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ShowTimeList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/TicketList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/TicketList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/finalproject/Manager-Screenroom.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/finalproject/Manager-Screenroom.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/finalproject/Manager-Showtime.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/finalproject/Manager-Showtime.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -96,7 +91,7 @@
       <workItem from="1701455578668" duration="206000" />
       <workItem from="1701455827661" duration="5168000" />
       <workItem from="1701647040909" duration="775000" />
-      <workItem from="1701696586050" duration="4672000" />
+      <workItem from="1701696586050" duration="6559000" />
     </task>
     <servers />
   </component>
