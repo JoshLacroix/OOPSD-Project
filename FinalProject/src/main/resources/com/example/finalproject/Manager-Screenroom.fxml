@@ -7,17 +7,17 @@
 <?import javafx.scene.text.Font?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.ManagerScreenRoomController">
    <children>
       <Label layoutX="203.0" layoutY="49.0" text="Manage Screen Rooms">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <ListView layoutX="134.0" layoutY="100.0" prefHeight="200.0" prefWidth="333.0" />
+      <ListView fx:id="aListView" layoutX="134.0" layoutY="100.0" prefHeight="200.0" prefWidth="333.0" />
       <Button layoutX="134.0" layoutY="312.0" mnemonicParsing="false" text="Add" />
       <Button layoutX="282.0" layoutY="312.0" mnemonicParsing="false" text="Edit" />
       <Button layoutX="416.0" layoutY="312.0" mnemonicParsing="false" text="Delete" />
-      <Button layoutX="511.0" layoutY="354.0" mnemonicParsing="false" text="Back" />
+      <Button layoutX="511.0" layoutY="354.0" mnemonicParsing="false" text="Back" onAction="#backButtonCLick"/>
    </children>
 </Pane>

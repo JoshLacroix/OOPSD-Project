@@ -13,6 +13,7 @@ public class ShowTimeList {
      */
     private List<ShowTime> showTimes = new LinkedList<ShowTime>();
 
+    private static ShowTimeList instance;
     /**
      * Constructs a new list with default samples
      */
@@ -21,6 +22,14 @@ public class ShowTimeList {
         this.showTimes.add(new ShowTime("Fast and Furious 55", 55, 2, new Date()));
         this.showTimes.add(new ShowTime("Cabin in the Woods 2", 39, 3, new Date()));
     }
+
+    public static ShowTimeList getInstance(){
+        if (instance == null) {
+            instance = new ShowTimeList();
+        }
+        return instance;
+    }
+
 
     /**
      * adds a show time to the list

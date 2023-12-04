@@ -13,6 +13,7 @@ public class TicketList {
      */
     private List<Ticket> tickets = new LinkedList<Ticket>();
 
+    private static TicketList instance;
     /**
      * Constructs a new list with default samples
      */
@@ -21,6 +22,14 @@ public class TicketList {
         this.tickets.add(new Ticket("502", "Fast and Furious 55", new Date()));
         this.tickets.add(new Ticket("503", "Dry Paint", new Date()));
     }
+
+    public static TicketList getInstance(){
+        if (instance == null) {
+            instance = new TicketList();
+        }
+        return instance;
+    }
+
 
     /**
      * adds a ticket to the list

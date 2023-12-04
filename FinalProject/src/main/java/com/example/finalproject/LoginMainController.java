@@ -31,7 +31,7 @@ public class LoginMainController {
     /**
      * list of users in the system
      */
-    PersonList people = new PersonList();
+    private PersonList people = PersonList.getInstance();
 
     /**
      * Handles the log in button event while validating user input.

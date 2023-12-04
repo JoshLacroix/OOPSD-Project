@@ -12,13 +12,21 @@ public class PersonList {
      */
     private final List<Person> myPersons = new LinkedList<Person>();
 
+    private static PersonList instance;
     /**
      * Constructs a new list with default samples
      */
-    public PersonList() {
+    private PersonList() {
         this.myPersons.add(new Manager("Peter", "peter@gmail.com", "123456"));
         this.myPersons.add(new Client("Paul", "paul@gmail.com", "123456"));
         this.myPersons.add(new Client("Jane", "JaneDoe@outlook.com", "blindspot"));
+    }
+
+    public static PersonList getInstance(){
+        if (instance == null) {
+            instance = new PersonList();
+        }
+        return instance;
     }
 
     /**

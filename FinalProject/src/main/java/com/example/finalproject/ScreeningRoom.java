@@ -54,4 +54,12 @@ public class ScreeningRoom {
     public void setNumOfSeats(int numOfSeats) {
         this.numOfSeats = numOfSeats;
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String toString() {
+        return "Room " + this.getRoomNumber() + " (" + this.getNumOfSeats() + ")";
+    }
 }

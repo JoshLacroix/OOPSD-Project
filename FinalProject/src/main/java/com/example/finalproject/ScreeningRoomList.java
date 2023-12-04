@@ -10,16 +10,25 @@ public class ScreeningRoomList {
     /**
      * List of screening rooms
      */
-    private List<ScreeningRoom> screenRooms = new LinkedList<ScreeningRoom>();
+    private List<ScreeningRoom> aScreenRooms = new LinkedList<ScreeningRoom>();
 
+    private static ScreeningRoomList instance;
     /**
      * Constructs a new list with default samples
      */
-    public ScreeningRoomList(){
-        this.screenRooms.add(new ScreeningRoom(1, 80));
-        this.screenRooms.add(new ScreeningRoom(2, 65));
-        this.screenRooms.add(new ScreeningRoom(3, 55));
+    private ScreeningRoomList(){
+        this.aScreenRooms.add(new ScreeningRoom(1, 80));
+        this.aScreenRooms.add(new ScreeningRoom(2, 65));
+        this.aScreenRooms.add(new ScreeningRoom(3, 55));
     }
+
+    public static ScreeningRoomList getInstance(){
+        if (instance == null) {
+            instance = new ScreeningRoomList();
+        }
+        return instance;
+    }
+
 
     /**
      * Adds a screening room to the list
@@ -27,6 +36,14 @@ public class ScreeningRoomList {
      * @return
      */
     public boolean addScreenRoom(ScreeningRoom pScreenRoom) {
-        return this.screenRooms.add(pScreenRoom);
+        return this.aScreenRooms.add(pScreenRoom);
+    }
+
+    public LinkedList<String> getAllScreeningRooms() {
+        LinkedList<String> result = new LinkedList<>();
+        for (ScreeningRoom screeningRoom :  aScreenRooms) {
+            result.add(screeningRoom.toString());
+        }
+        return result;
     }
 }
