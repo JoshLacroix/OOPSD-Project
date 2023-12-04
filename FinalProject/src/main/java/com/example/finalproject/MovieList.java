@@ -10,25 +10,24 @@ public class MovieList {
     /**
      * List of movies
      */
-    private List<Movie> movies = new LinkedList<Movie>();
+    private final List<Movie> aMovies = new LinkedList<Movie>();
 
     private static MovieList instance;
     /**
      * Constructs a new list with default samples
      */
     private MovieList(){
-        this.movies.add(new Movie("Dry Paint", "Comedy"));
-        this.movies.add(new Movie("Fast and Furious 55", "Action"));
-        this.movies.add(new Movie("Cabin in the Woods 2", "Horror"));
+        this.aMovies.add(new Movie("Dry Paint", "Comedy"));
+        this.aMovies.add(new Movie("Fast and Furious 55", "Action"));
+        this.aMovies.add(new Movie("Cabin in the Woods 2", "Horror"));
     }
 
     /**
      * Adds a new movie to the movie list
      * @param pMovie
-     * @return
      */
-    public boolean addMovie(Movie pMovie) {
-        return this.movies.add(pMovie);
+    public void addMovie(Movie pMovie) {
+        this.aMovies.add(pMovie);
     }
 
     public static MovieList getInstance(){
@@ -38,11 +37,37 @@ public class MovieList {
         return instance;
     }
 
+    /**
+     * Returns a list of all movie names.
+     * @return List of movie name strings.
+     */
     public List<String> getAllMovieTitles() {
         LinkedList<String> result = new LinkedList<>();
-        for (Movie movie : movies) {
+        for (Movie movie : aMovies) {
             result.add(movie.toString());
         }
         return result;
+    }
+
+    /**
+     * Deletes movie from list.
+     * @param selectedId Movie list id to delete.
+     */
+    public void deleteMovieAt(int selectedId) {
+        if (this.aMovies.get(selectedId) != null) {
+            this.aMovies.remove(selectedId);
+        }
+    }
+
+    /**
+     * Gets specific movie with selected ID.
+     * @param selectedId Movie ID to be returned.
+     * @return Selected Movie.
+     */
+    public Movie getMovieAt(int selectedId) {
+        if (selectedId < 0 || selectedId >= this.aMovies.size()) {
+            throw new IndexOutOfBoundsException("This movie cannot be selected!");
+        }
+        return this.aMovies.get(selectedId);
     }
 }
