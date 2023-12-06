@@ -7,14 +7,14 @@
 <?import javafx.scene.text.Font?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.ManagerTicketController">
    <children>
       <Label layoutX="237.0" layoutY="50.0" text="Tickets Bought">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <ListView layoutX="139.0" layoutY="100.0" prefHeight="200.0" prefWidth="324.0" />
+      <ListView fx:id="aListView" layoutX="139.0" layoutY="100.0" prefHeight="200.0" prefWidth="324.0" />
       <Button layoutX="281.0" layoutY="332.0" mnemonicParsing="false" text="Back" />
    </children>
 </Pane>

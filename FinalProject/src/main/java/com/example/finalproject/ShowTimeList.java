@@ -1,5 +1,8 @@
 package com.example.finalproject;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -11,16 +14,16 @@ public class ShowTimeList {
     /**
      * list of showtimes
      */
-    private List<ShowTime> showTimes = new LinkedList<ShowTime>();
+    private List<ShowTime> aShowTimes = new LinkedList<ShowTime>();
 
     private static ShowTimeList instance;
     /**
      * Constructs a new list with default samples
      */
     public ShowTimeList(){
-        this.showTimes.add(new ShowTime("Dry paint", 67, 1, new Date()));
-        this.showTimes.add(new ShowTime("Fast and Furious 55", 55, 2, new Date()));
-        this.showTimes.add(new ShowTime("Cabin in the Woods 2", 39, 3, new Date()));
+        this.aShowTimes.add(new ShowTime("Dry paint", 67, 1, LocalDateTime.of(2023, 12, 6, 12,30,0,0)));
+        this.aShowTimes.add(new ShowTime("Fast and Furious 55", 55, 2, LocalDateTime.now()));
+        this.aShowTimes.add(new ShowTime("Cabin in the Woods 2", 39, 3, LocalDateTime.now()));
     }
 
     public static ShowTimeList getInstance(){
@@ -37,7 +40,27 @@ public class ShowTimeList {
      * @return
      */
     public boolean addShowTime(ShowTime pShowTime) {
-        return this.showTimes.add(pShowTime);
+        return this.aShowTimes.add(pShowTime);
     }
 
+    public LinkedList<String> getAllShowTimes() {
+        LinkedList<String> result = new LinkedList<>();
+        for (ShowTime showTime : aShowTimes) {
+            result.add(showTime.toString());
+        }
+        return result;
+    }
+
+    public void deleteShowTimeAt(int selectedId) {
+        if (this.aShowTimes.get(selectedId) != null) {
+            this.aShowTimes.remove(selectedId);
+        }
+    }
+
+    public ShowTime getShowTimeAt(int selectedId) {
+        if (selectedId < 0 || selectedId >= this.aShowTimes.size()) {
+            throw new IndexOutOfBoundsException("This movie cannot be selected!");
+        }
+        return this.aShowTimes.get(selectedId);
+    }
 }

@@ -1,5 +1,8 @@
 package com.example.finalproject;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.util.Date;
 
 /**
@@ -21,7 +24,7 @@ public class ShowTime {
     /**
      * variable to hold date of showtime
      */
-    Date showDate = new Date();
+    private LocalDateTime showDate;
 
     /**
      * constructor for a new showtime with movie, number of tickets, screening room, and showtime
@@ -30,7 +33,7 @@ public class ShowTime {
      * @param screeningRoom
      * @param showDate
      */
-    public ShowTime(String movie, int numOfTickets, int screeningRoom, Date showDate) {
+    public ShowTime(String movie, int numOfTickets, int screeningRoom, LocalDateTime showDate) {
         this.movie = movie;
         this.numOfTickets = numOfTickets;
         this.screeningRoom = screeningRoom;
@@ -71,6 +74,7 @@ public class ShowTime {
 
     /**
      * Get the screening room
+     *
      * @return screeningRoom
      */
     public int getScreeningRoom() {
@@ -83,5 +87,22 @@ public class ShowTime {
      */
     public void setScreeningRoom(int screeningRoom) {
         this.screeningRoom = screeningRoom;
+    }
+
+    /**
+     * Get the date and time of show
+     */
+    public LocalDateTime getShowDate(){ return showDate;}
+    /**
+     * Set the date and time
+     */
+    public void setShowDate(LocalDateTime showDate) {this.showDate = showDate;}
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String toString() {
+        return this.getMovie() + " shown in room " + this.getScreeningRoom() + " at " + DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM).format(this.showDate) +
+                " " + getNumOfTickets() + " tickets remain";
     }
 }

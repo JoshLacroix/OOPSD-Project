@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.ManagerShowTimeController">
    <children>
       <Label layoutX="235.0" layoutY="46.0" text="Manage Show Times">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+      <ListView fx:id="aListView" layoutX="78.0" layoutY="98.0" prefHeight="257.0" prefWidth="472.0" />
+      <Button layoutX="157.0" layoutY="381.0" mnemonicParsing="false" text="Add" onAction="#addButtonClick"/>
+      <Button layoutX="296.0" layoutY="381.0" mnemonicParsing="false" text="Edit" onAction="#editButtonClick"/>
+      <Button layoutX="428.0" layoutY="381.0" mnemonicParsing="false" text="Delete" onAction="#deleteButtonClick"/>
+      <Button layoutX="530.0" layoutY="433.0" mnemonicParsing="false" text="Back" onAction="#backButtonClick" />
    </children>
 </Pane>
