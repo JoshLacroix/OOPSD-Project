@@ -62,4 +62,6 @@ public class Ticket {
     public void setMovie(String movie) {
         this.movie = movie;
     }
+
+
 }

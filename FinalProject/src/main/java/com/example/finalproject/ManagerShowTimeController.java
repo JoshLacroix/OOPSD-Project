@@ -49,7 +49,7 @@ public class ManagerShowTimeController {
         Parent view = fxmlLoader.load();
         ManagerShowTimeEditViewController controller = fxmlLoader.getController();
         controller.setShowTime(pShowTime);
-        Scene nextScene = new Scene(view, 300, 300);
+        Scene nextScene = new Scene(view, 600, 400);
         Stage nextStage = new Stage();
         nextStage.setScene(nextScene);
         nextStage.setTitle("Showtime Details");
@@ -78,7 +78,7 @@ public class ManagerShowTimeController {
     protected void editButtonClick(ActionEvent pEvent) throws IOException {
         int selectedId = this.aListView.getSelectionModel().getSelectedIndex();
         if (selectedId < 0) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "Select a movie!");
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Select a showtime!");
             alert.showAndWait();
         } else {
             ShowTime selectedShowing = this.showTimeList.getShowTimeAt(selectedId);

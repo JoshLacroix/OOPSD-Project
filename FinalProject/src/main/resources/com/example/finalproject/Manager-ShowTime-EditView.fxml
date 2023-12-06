@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.ManagerShowTimeEditViewController">
    <children>
       <Label layoutX="152.0" layoutY="38.0" text="Show Time Details">
          <font>
@@ -21,13 +21,13 @@
       <Label layoutX="182.0" layoutY="248.0" text="Show Date:" />
       <TextField fx:id="aMovieTextField" layoutX="259.0" layoutY="96.0" />
       <TextField fx:id="aNumOfTicketTextField" layoutX="259.0" layoutY="142.0" />
-      <TextField fx:id="aScreenRoomTextField" layoutX="259.0" layoutY="187.0" />
-      <Button layoutX="215.0" layoutY="351.0" mnemonicParsing="false" text="Save" />
-      <Button layoutX="299.0" layoutY="351.0" mnemonicParsing="false" text="Back" />
+      <TextField fx:id="aScreeningRoomTextField" layoutX="259.0" layoutY="187.0" />
+      <Button layoutX="215.0" layoutY="351.0" mnemonicParsing="false" onAction="#saveButtonClick" text="Save" />
+      <Button layoutX="299.0" layoutY="351.0" mnemonicParsing="false" onAction="#backButtonClick" text="Back" />
       <DatePicker fx:id="aShowDatePicker" layoutX="250.0" layoutY="244.0" prefHeight="25.0" prefWidth="98.0" />
       <Label layoutX="55.0" layoutY="302.0" text="Show TIme (hour):" />
-      <ComboBox fx:id="aShowTimeComboBox" layoutX="157.0" layoutY="298.0" prefHeight="25.0" prefWidth="105.0" />
+      <ComboBox fx:id="aShowTimeHourComboBox" layoutX="157.0" layoutY="298.0" prefHeight="25.0" prefWidth="105.0" />
       <Label layoutX="280.0" layoutY="302.0" text="Show TIme(minute):" />
-      <ComboBox layoutX="395.0" layoutY="298.0" prefHeight="25.0" prefWidth="98.0" />
+      <ComboBox fx:id="aShowTimeMinuteComboBox" layoutX="395.0" layoutY="298.0" prefHeight="25.0" prefWidth="98.0" />
    </children>
 </Pane>

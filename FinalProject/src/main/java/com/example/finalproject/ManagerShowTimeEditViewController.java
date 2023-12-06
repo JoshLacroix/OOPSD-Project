@@ -8,7 +8,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
@@ -89,7 +91,10 @@ public class ManagerShowTimeEditViewController {
             this.aShowTime.setMovie(this.aMovieTextField.getText());
             this.aShowTime.setScreeningRoom(Integer.parseInt(this.aScreeningRoomTextField.getText()));
             this.aShowTime.setNumOfTickets(Integer.parseInt(this.aNumOfTicketTextField.getText()));
-            this.aShowTime.setShowDate(LocalDateTime.parse(this.aShowDatePicker.getValue().toString()));
+            LocalDate date = (LocalDate) this.aShowDatePicker.getValue();
+            int hour = this.aShowTimeHourComboBox.getValue();
+            int minutes = this.aShowTimeMinuteComboBox.getValue();
+            this.aShowTime.setShowDate(LocalDateTime.of(date, LocalTime.of(hour, minutes)));
         }
         backButtonClick(pEvent);
     }
