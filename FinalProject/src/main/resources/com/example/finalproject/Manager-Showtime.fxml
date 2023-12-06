@@ -14,9 +14,9 @@
          </font>
       </Label>
       <ListView fx:id="aListView" layoutX="78.0" layoutY="98.0" prefHeight="257.0" prefWidth="472.0" />
-      <Button layoutX="157.0" layoutY="381.0" mnemonicParsing="false" text="Add" />
-      <Button layoutX="296.0" layoutY="381.0" mnemonicParsing="false" text="Edit" />
-      <Button layoutX="428.0" layoutY="381.0" mnemonicParsing="false" text="Delete" />
+      <Button layoutX="157.0" layoutY="381.0" mnemonicParsing="false" text="Add" onAction="#addButtonClick"/>
+      <Button layoutX="296.0" layoutY="381.0" mnemonicParsing="false" text="Edit" onAction="#editButtonClick"/>
+      <Button layoutX="428.0" layoutY="381.0" mnemonicParsing="false" text="Delete" onAction="#deleteButtonClick"/>
       <Button layoutX="530.0" layoutY="433.0" mnemonicParsing="false" text="Back" onAction="#backButtonClick" />
    </children>
 </Pane>
