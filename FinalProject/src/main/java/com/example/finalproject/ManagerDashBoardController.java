@@ -69,7 +69,7 @@ public class ManagerDashBoardController {
     protected void showTimeEditButtonClick(ActionEvent pEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Manager-Showtime.fxml"));
         Parent view = fxmlLoader.load();
-        Scene nextScene = new Scene(view, 600, 400);
+        Scene nextScene = new Scene(view, 600, 500);
         Stage nextStage = new Stage();
         nextStage.setScene(nextScene);
         nextStage.setTitle("Manager");

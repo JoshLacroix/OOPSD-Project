@@ -1,5 +1,8 @@
 package com.example.finalproject;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.util.Date;
 
 /**
@@ -17,7 +20,7 @@ public class Ticket {
     /**
      * variable to hold show date
      */
-    Date showDate = new Date();
+    private LocalDateTime showDate ;
 
     /**
      * constructor for a new ticket with ticket ID, movie,and show date
@@ -25,7 +28,7 @@ public class Ticket {
      * @param movie
      * @param showDate
      */
-    public Ticket(String ticketId, String movie, Date showDate){
+    public Ticket(String ticketId, String movie, LocalDateTime showDate){
         this.ticketId = ticketId;
         this.movie = movie;
         this.showDate = showDate;
@@ -63,5 +66,11 @@ public class Ticket {
         this.movie = movie;
     }
 
-
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String toString() {
+        return this.getTicketId() + ", " + this.getMovie() + " at " + DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM).format(this.showDate);
+    }
 }

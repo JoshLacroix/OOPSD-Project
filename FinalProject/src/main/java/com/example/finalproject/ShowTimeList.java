@@ -21,9 +21,9 @@ public class ShowTimeList {
      * Constructs a new list with default samples
      */
     public ShowTimeList(){
-        this.aShowTimes.add(new ShowTime("Dry paint", 67, 1, LocalDateTime.of(2023, 12, 6, 12,30,0,0)));
-        this.aShowTimes.add(new ShowTime("Fast and Furious 55", 55, 2, LocalDateTime.now()));
-        this.aShowTimes.add(new ShowTime("Cabin in the Woods 2", 39, 3, LocalDateTime.now()));
+        this.aShowTimes.add(new ShowTime("Dry paint", 67, 1, LocalDateTime.of(2023, 12, 6, 9,30,0,0)));
+        this.aShowTimes.add(new ShowTime("Fast and Furious 55", 55, 2,LocalDateTime.of(2023, 12, 6, 6,0,0,0)));
+        this.aShowTimes.add(new ShowTime("Cabin in the Woods 2", 39, 3, LocalDateTime.of(2023, 12, 6, 6,30,0,0)));
     }
 
     public static ShowTimeList getInstance(){

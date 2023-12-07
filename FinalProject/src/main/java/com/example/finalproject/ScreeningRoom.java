@@ -60,6 +60,6 @@ public class ScreeningRoom {
      */
     @Override
     public String toString() {
-        return "Room " + this.getRoomNumber() + " (" + this.getNumOfSeats() + ")";
+        return "Room " + this.getRoomNumber() + " (" + this.getNumOfSeats() + " seats left)";
     }
 }

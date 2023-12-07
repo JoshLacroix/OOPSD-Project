@@ -1,5 +1,6 @@
 package com.example.finalproject;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -11,16 +12,16 @@ public class TicketList {
     /**
      * list of tickets
      */
-    private List<Ticket> tickets = new LinkedList<Ticket>();
+    private List<Ticket> aTicket = new LinkedList<Ticket>();
 
     private static TicketList instance;
     /**
      * Constructs a new list with default samples
      */
     public TicketList(){
-        this.tickets.add(new Ticket("501", "Dry Paint", new Date()));
-        this.tickets.add(new Ticket("502", "Fast and Furious 55", new Date()));
-        this.tickets.add(new Ticket("503", "Dry Paint", new Date()));
+        this.aTicket.add(new Ticket("501", "Dry Paint", LocalDateTime.of(2023, 12, 6, 9,30,0,0)));
+        this.aTicket.add(new Ticket("502", "Fast and Furious 55", LocalDateTime.of(2023, 12, 7, 6,0,0,0)));
+        this.aTicket.add(new Ticket("503", "Dry Paint", LocalDateTime.of(2023, 12, 6, 6,30,0,0)));
     }
 
     public static TicketList getInstance(){
@@ -30,6 +31,18 @@ public class TicketList {
         return instance;
     }
 
+    /**
+     * Returns a list of all movie names.
+     * @return List of movie name strings.
+     */
+    public List<String> getAllMovieTitles() {
+        LinkedList<String> result = new LinkedList<>();
+        for (Ticket ticket : aTicket) {
+            result.add(ticket.toString());
+        }
+        return result;
+    }
+
 
     /**
      * adds a ticket to the list
@@ -37,6 +50,6 @@ public class TicketList {
      * @return
      */
     public boolean addTicket(Ticket pTicket){
-        return this.tickets.add(pTicket);
+        return this.aTicket.add(pTicket);
     }
 }

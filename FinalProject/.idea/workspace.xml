@@ -6,11 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="80a4c670-3d24-4b79-8385-d864aab0d9c2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerShowTimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerShowTimeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerShowTimeEditViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerShowTimeEditViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/LoginMainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/LoginMainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerDashBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerDashBoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerTicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ManagerTicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ScreeningRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ScreeningRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ShowTimeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/ShowTimeList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/finalproject/Manager-ShowTime-EditView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/finalproject/Manager-ShowTime-EditView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/finalproject/TicketList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/finalproject/TicketList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/finalproject/Manager-Tickets.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/finalproject/Manager-Tickets.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feature/ShowTImeCRUD",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/adm1/OneDrive - Champlain Regional College/Documents/CST Sem 3/OOP2/Project/OOPSD-Project/FinalProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -95,7 +97,7 @@
       <workItem from="1701455827661" duration="5168000" />
       <workItem from="1701647040909" duration="775000" />
       <workItem from="1701696586050" duration="10189000" />
-      <workItem from="1701788000424" duration="17702000" />
+      <workItem from="1701788000424" duration="20281000" />
     </task>
     <servers />
   </component>

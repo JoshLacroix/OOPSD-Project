@@ -54,7 +54,7 @@ public class LoginMainController {
              */
             FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Manager-Dashboard.fxml"));
             Parent view = fxmlLoader.load();
-            Scene nextScene = new Scene(view, 600, 300);
+            Scene nextScene = new Scene(view, 600, 350);
             Stage nextStage = new Stage();
             nextStage.setScene(nextScene);
             nextStage.setTitle("Manager");
