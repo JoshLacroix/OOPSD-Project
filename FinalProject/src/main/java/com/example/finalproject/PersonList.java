@@ -10,16 +10,16 @@ public class PersonList {
     /**
      * list of people
      */
-    private final List<Person> myPersons = new LinkedList<Person>();
+    private final List<Person> aPersons = new LinkedList<Person>();
 
     private static PersonList instance;
     /**
      * Constructs a new list with default samples
      */
     private PersonList() {
-        this.myPersons.add(new Manager("Peter", "peter@gmail.com", "123456"));
-        this.myPersons.add(new Client("Paul", "paul@gmail.com", "123456"));
-        this.myPersons.add(new Client("Jane", "JaneDoe@outlook.com", "blindspot"));
+        this.aPersons.add(new Manager("Peter", "peter@gmail.com", "123456"));
+        this.aPersons.add(new Client("Paul", "paul@gmail.com", "123456"));
+        this.aPersons.add(new Client("Jane", "JaneDoe@outlook.com", "blindspot"));
     }
 
     public static PersonList getInstance(){
@@ -35,7 +35,7 @@ public class PersonList {
      * @return
      */
     public boolean addPerson(Client pClient) {
-        return this.myPersons.add(pClient);
+        return this.aPersons.add(pClient);
     }
 
     /**
@@ -45,11 +45,20 @@ public class PersonList {
      * @return
      */
     public Person checkCredentials(String pEmail, String pPassword) {
-        for (Person myPerson : myPersons) {
+        for (Person myPerson : aPersons) {
             if (myPerson.checkCredentials(pEmail, pPassword)) {
                 return myPerson;
             }
         }
         return null;
+    }
+    public LinkedList<String> getAllScreeningRooms() {
+        LinkedList<String> result = new LinkedList<>();
+        for (Person person :  aPersons) {
+            if (person instanceof Client){
+                result.add(person.toString());
+            }
+        }
+        return result;
     }
 }

@@ -89,4 +89,12 @@ public class Person {
     public boolean checkCredentials(String pEmail, String pPassword){
         return this.aEmail.equals(pEmail) && this.pPassword.equals(pPassword);
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String toString() {
+        return "Cleint name: " + this.getName() + " email(" + this.getEmail() + ")";
+    }
 }
