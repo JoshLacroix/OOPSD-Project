@@ -35,16 +35,6 @@ public class ScreeningRoomList {
         return instance;
     }
 
-
-    /**
-     * Adds a screening room to the list
-     * @param pScreenRoom
-     * @return
-     */
-    public boolean addScreenRoom(ScreeningRoom pScreenRoom) {
-        return this.aScreenRooms.add(pScreenRoom);
-    }
-
     /**
      * Retrieves a list of screening rooms with their information.
      * @return A LinkedList of strings containing screening room information.

@@ -36,15 +36,6 @@ public class PersonList {
     }
 
     /**
-     * Add a new person to the list
-     * @param pClient
-     * @return
-     */
-    public boolean addPerson(Client pClient) {
-        return this.aPersons.add(pClient);
-    }
-
-    /**
      * Ensures that the input during log in is a valid credential
      * @param pEmail
      * @param pPassword

@@ -48,12 +48,5 @@ public class TicketList {
         }
         return result;
     }
-    /**
-     * adds a ticket to the list
-     * @param pTicket
-     * @return
-     */
-    public boolean addTicket(Ticket pTicket){
-        return this.aTicket.add(pTicket);
-    }
+
 }

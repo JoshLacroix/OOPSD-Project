@@ -65,14 +65,6 @@ public class Person {
     }
 
     /**
-     * get the password of person
-     * @return
-     */
-    public String getPassword() {
-        return pPassword;
-    }
-
-    /**
      * set the password of person
      * @param pPassword
      */

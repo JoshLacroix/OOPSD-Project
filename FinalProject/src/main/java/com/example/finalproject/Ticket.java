@@ -43,14 +43,6 @@ public class Ticket {
     }
 
     /**
-     * Set the ticket ID
-     * @param ticketId
-     */
-    public void setTicketId(String ticketId) {
-        this.ticketId = ticketId;
-    }
-
-    /**
      * Get the movie
      * @return movie
      */

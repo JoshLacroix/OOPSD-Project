@@ -32,27 +32,11 @@ public class ScreeningRoom {
     }
 
     /**
-     * set the room number
-     * @param roomNumber
-     */
-    public void setRoomNumber(int roomNumber) {
-        this.roomNumber = roomNumber;
-    }
-
-    /**
      * get the number of seats
      * @return numOfSeats
      */
     public int getNumOfSeats() {
         return numOfSeats;
-    }
-
-    /**
-     * Set the number of seats
-     * @param numOfSeats
-     */
-    public void setNumOfSeats(int numOfSeats) {
-        this.numOfSeats = numOfSeats;
     }
 
     /**
