@@ -6,16 +6,15 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.ClientMovieController">
    <children>
       <Label layoutX="195.0" layoutY="46.0" text="Movies currently playing">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <ListView layoutX="154.0" layoutY="94.0" prefHeight="200.0" prefWidth="292.0" />
-      <Button layoutX="207.0" layoutY="328.0" mnemonicParsing="false" text="Buy Ticket" />
-      <Button layoutX="355.0" layoutY="328.0" mnemonicParsing="false" text="Back" />
+      <ListView fx:id="aListView" layoutX="63.0" layoutY="94.0" prefHeight="200.0" prefWidth="490.0" />
+      <Button layoutX="207.0" layoutY="328.0" mnemonicParsing="false" onAction="#buyTicketButtonClick" text="Buy Ticket" />
+      <Button layoutX="355.0" layoutY="328.0" mnemonicParsing="false" onAction="#backButtonClick" text="Back" />
    </children>
 </Pane>
