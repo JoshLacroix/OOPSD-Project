@@ -17,8 +17,8 @@
       </Label>
       <Label layoutX="312.0" layoutY="160.0" text="Email:" />
       <Label layoutX="310.0" layoutY="127.0" text="Name:" />
-      <TextField fx:id="logInEmailTextfield" layoutX="120.0" layoutY="137.0" text="peter@gmail.com" />
-      <TextField fx:id="logInPasswordTextfield" layoutX="121.0" layoutY="176.0" text="123456" />
+      <TextField fx:id="logInEmailTextfield" layoutX="120.0" layoutY="137.0"/>
+      <TextField fx:id="logInPasswordTextfield" layoutX="121.0" layoutY="176.0" />
       <TextField fx:id="signUpNameTextfield" layoutX="353.0" layoutY="123.0" />
       <TextField fx:id="signUpEmailTestfield" layoutX="353.0" layoutY="156.0" />
       <Label layoutX="293.0" layoutY="193.0" text="Password" />

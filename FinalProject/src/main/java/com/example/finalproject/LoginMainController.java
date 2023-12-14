@@ -28,6 +28,13 @@ public class LoginMainController {
      */
     @FXML
     private TextField logInPasswordTextfield;
+
+    @FXML
+    private TextField signUpNameTextfield;
+    @FXML
+    private TextField signUpEmailTestfield;
+    @FXML
+    private TextField signUpPasswordTextfield;
     /**
      * list of users in the system
      */
@@ -86,16 +93,28 @@ public class LoginMainController {
      */
     @FXML
     protected void signUpButtonClick(ActionEvent pEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Client-Dashboard.fxml"));
-        Parent view = fxmlLoader.load();
-        Scene nextScene = new Scene(view, 500, 300);
-        Stage nextStage = new Stage();
-        nextStage.setScene(nextScene);
-        nextStage.setTitle("ZMS");
-        nextStage.initModality(Modality.WINDOW_MODAL);
-        nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
-        nextStage.showAndWait();
+        if (isSignUpInputValid()){
+            FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Client-Dashboard.fxml"));
+            Parent view = fxmlLoader.load();
+            Scene nextScene = new Scene(view, 500, 300);
+            Stage nextStage = new Stage();
+            nextStage.setScene(nextScene);
+            nextStage.setTitle("ZMS");
+            nextStage.initModality(Modality.WINDOW_MODAL);
+            nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
+            nextStage.showAndWait();
+        }
+        else {
+            System.out.println("Please fill in all sign-up fields.");
+        }
     }
-
-
+    /**
+     * Validate sign-up input fields to ensure they are not empty.
+     * @return True if all fields are filled, false otherwise.
+     */
+    private boolean isSignUpInputValid() {
+        return !signUpNameTextfield.getText().isEmpty() &&
+                !signUpEmailTestfield.getText().isEmpty() &&
+                !signUpPasswordTextfield.getText().isEmpty();
+    }
 }
