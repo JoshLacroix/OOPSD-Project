@@ -39,25 +39,6 @@ public class ClientDashBoardController {
         nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
         nextStage.showAndWait();
     }
-
-    /**
-     * Screen that displays the clients information once the button is clicked
-     * @param pEvent
-     * @throws IOException
-     */
-    @FXML
-    protected void clientInfoButtonClick(ActionEvent pEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Client-Info.fxml"));
-        Parent view = fxmlLoader.load();
-        Scene nextScene = new Scene(view, 600, 400);
-        Stage nextStage = new Stage();
-        nextStage.setScene(nextScene);
-        nextStage.setTitle("Client");
-        nextStage.initModality(Modality.WINDOW_MODAL);
-        nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
-        nextStage.showAndWait();
-    }
-
     /**
      * A log out button event the returns client to login page
      */
