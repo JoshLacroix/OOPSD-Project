@@ -95,6 +95,6 @@ public class Person {
      */
     @Override
     public String toString() {
-        return "Cleint name: " + this.getName() + " email(" + this.getEmail() + ")";
+        return "Cleint name: " + this.getName() + " email (" + this.getEmail() + ")";
     }
 }

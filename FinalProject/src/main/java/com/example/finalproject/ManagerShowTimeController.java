@@ -13,6 +13,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Controller for Manager-ShowTime.fxml
+ */
 public class ManagerShowTimeController {
     /**
      * ListView holding the list of show times to be displayed.
@@ -42,8 +45,13 @@ public class ManagerShowTimeController {
         this.aListView.getItems().setAll(showTimeList.getAllShowTimes());
     }
 
-
-
+    /**
+     * Launch new window for given show time.
+     *
+     * @param pEvent Triggered event. Not used, but necessary for JavaFX.
+     * @param pShowTime Movie to be edited, null if new.
+     * @throws IOException Thrown if loading xml fails.
+     */
     public void launchShowTimeDetailViewFor(ActionEvent pEvent, ShowTime pShowTime) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Manager-ShowTime-EditView.fxml"));
         Parent view = fxmlLoader.load();

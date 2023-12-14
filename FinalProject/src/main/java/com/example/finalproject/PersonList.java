@@ -11,7 +11,9 @@ public class PersonList {
      * list of people
      */
     private final List<Person> aPersons = new LinkedList<Person>();
-
+    /**
+     * Singleton instance of personlist class
+     */
     private static PersonList instance;
     /**
      * Constructs a new list with default samples
@@ -21,7 +23,11 @@ public class PersonList {
         this.aPersons.add(new Client("Paul", "paul@gmail.com", "123456"));
         this.aPersons.add(new Client("Jane", "JaneDoe@outlook.com", "blindspot"));
     }
-
+    /**
+     * Returns a singleton instance of the TicketList class.
+     * If the instance does not exist, a new instance is created.
+     * @return The PersonList instance.
+     */
     public static PersonList getInstance(){
         if (instance == null) {
             instance = new PersonList();
@@ -52,7 +58,11 @@ public class PersonList {
         }
         return null;
     }
-    public LinkedList<String> getAllScreeningRooms() {
+    /**
+     * Retrieves a list of clients with information.
+     * @return A LinkedList of strings containing client information.
+     */
+    public LinkedList<String> getAllClients() {
         LinkedList<String> result = new LinkedList<>();
         for (Person person :  aPersons) {
             if (person instanceof Client){

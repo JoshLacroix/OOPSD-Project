@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * Controller for manager page once signed in
+ * Controller for Manager-Dashboard.fxml
  */
 public class ManagerDashBoardController {
     /**
@@ -78,6 +78,11 @@ public class ManagerDashBoardController {
         nextStage.showAndWait();
     }
 
+    /**
+     * Displays the clients who have signed up to the appliaction
+     * @param pEvent
+     * @throws IOException
+     */
     @FXML
     protected void clientViewButtonClick(ActionEvent pEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Manager-ClientView.fxml"));
@@ -90,6 +95,12 @@ public class ManagerDashBoardController {
         nextStage.initOwner(((Node) pEvent.getSource()).getScene().getWindow());
         nextStage.showAndWait();
     }
+
+    /**
+     * Displays what tickets that have been bought by clients and its info
+     * @param pEvent
+     * @throws IOException
+     */
     @FXML
     protected void ticketViewButtonClick(ActionEvent pEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginMainApplication.class.getResource("Manager-Tickets.fxml"));

@@ -14,6 +14,9 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
+/**
+ * Controller for Manager-ShowTime-EditView.fxml
+ */
 public class ManagerShowTimeEditViewController {
     /**
      * Text field for movie title.
@@ -53,7 +56,9 @@ public class ManagerShowTimeEditViewController {
      * Show time to be edited if any
      */
     private ShowTime aShowTime;
-
+    /**
+     * Loading the combobox for the first time after setting up.
+     */
     @FXML
     private void initialize(){
         aShowTimeHourComboBox.getItems().addAll(6, 9);

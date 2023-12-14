@@ -11,7 +11,9 @@ public class ScreeningRoomList {
      * List of screening rooms
      */
     private List<ScreeningRoom> aScreenRooms = new LinkedList<ScreeningRoom>();
-
+    /**
+     * Singleton instance of the ScreeningRoomList class.
+     */
     private static ScreeningRoomList instance;
     /**
      * Constructs a new list with default samples
@@ -21,7 +23,11 @@ public class ScreeningRoomList {
         this.aScreenRooms.add(new ScreeningRoom(2, 65));
         this.aScreenRooms.add(new ScreeningRoom(3, 55));
     }
-
+    /**
+     * Returns a singleton instance of the ScreeningRoomList class.
+     * If the instance does not exist, a new instance is created.
+     * @return The ScreeningRoomList instance.
+     */
     public static ScreeningRoomList getInstance(){
         if (instance == null) {
             instance = new ScreeningRoomList();
@@ -39,6 +45,10 @@ public class ScreeningRoomList {
         return this.aScreenRooms.add(pScreenRoom);
     }
 
+    /**
+     * Retrieves a list of screening rooms with their information.
+     * @return A LinkedList of strings containing screening room information.
+     */
     public LinkedList<String> getAllScreeningRooms() {
         LinkedList<String> result = new LinkedList<>();
         for (ScreeningRoom screeningRoom :  aScreenRooms) {

@@ -5,13 +5,18 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 
+/**
+ * Controler for Manager-Tickets.fxml
+ */
 public class ManagerTicketController {
     /**
      * ListView holding the list of tickets bought to be displayed.
      */
     @FXML
     private ListView<String> aListView;
-
+    /**
+     * Singleton instance of ticketlist class
+     */
     private static TicketList instance;
 
     /**
@@ -32,7 +37,11 @@ public class ManagerTicketController {
      * Ticketlist holding the actual tickets.
      */
     private TicketList ticketList;
-
+    /**
+     * Returns a singleton instance of the TicketList class.
+     * If the instance does not exist, a new instance is created.
+     * @return The TicketList instance.
+     */
     public static TicketList getInstance(){
         if (instance == null) {
             instance = new TicketList();

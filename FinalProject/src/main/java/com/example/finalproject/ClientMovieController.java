@@ -6,6 +6,9 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 
+/**
+ * Controller for Client-Movie.fxml
+ */
 public class ClientMovieController {
     /**
      * ListView holding the list of show times to be displayed.
@@ -46,6 +49,12 @@ public class ClientMovieController {
         Stage currentStage = (Stage) this.aListView.getScene().getWindow();
         currentStage.close();
     }
+
+    /**
+     * Excuted on buy ticket click. Client buys a ticket for a selected movie
+     * @implNote While no longer required, this is extra for seeing the client is able to buy a ticket
+     * @param pEvent
+     */
     @FXML
     protected void buyTicketButtonClick(ActionEvent pEvent) {
         String selectedShowTime = aListView.getSelectionModel().getSelectedItem();

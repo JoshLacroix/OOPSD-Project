@@ -15,7 +15,9 @@ public class ShowTimeList {
      * list of showtimes
      */
     private List<ShowTime> aShowTimes = new LinkedList<ShowTime>();
-
+    /**
+     * Singleton instance of ticketlist class
+     */
     private static ShowTimeList instance;
     /**
      * Constructs a new list with default samples
@@ -25,7 +27,11 @@ public class ShowTimeList {
         this.aShowTimes.add(new ShowTime("Fast and Furious 55", 55, 2,LocalDateTime.of(2023, 12, 6, 6,0,0,0)));
         this.aShowTimes.add(new ShowTime("Cabin in the Woods 2", 39, 3, LocalDateTime.of(2023, 12, 6, 6,30,0,0)));
     }
-
+    /**
+     * Returns a singleton instance of the ShowTimeList class.
+     * If the instance does not exist, a new instance is created.
+     * @return The ShowTimeList instance.
+     */
     public static ShowTimeList getInstance(){
         if (instance == null) {
             instance = new ShowTimeList();

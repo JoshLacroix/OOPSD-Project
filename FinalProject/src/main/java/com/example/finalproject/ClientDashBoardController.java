@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * Controller for clients page once signed in or signed up
+ * Controller for Client-DashBoard
  */
 public class ClientDashBoardController {
     /**
